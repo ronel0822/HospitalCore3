@@ -173,9 +173,16 @@ beginAtZero: true
           });
           document.getElementById("submit").disabled = true;
           document.getElementById("addToReceipt").disabled = true;
+          $("#showReceipt").show();
         } 
       });
     });
+
+    function printReceipt(){
+      $("#or").show();
+        var transactionNo = parseInt($("#transNo").text());
+        document.getElementById('or').src = "http://hospitalname.com/pharmacy/receipt/"+transactionNo;
+    }
 
 </script>
 </body>

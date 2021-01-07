@@ -128,6 +128,13 @@ $amount = null;
           <input type="number" name="cash" id="cash" class="form-control-sm">
           <button id='submit' class="btn btn-success btn-block" disabled="true"><a id='order-receipt' style="text-decoration: none;color:white;">SUBMIT</a></button>
 
+        <br>
+          <div id='printed'></div>
+          <button id='showReceipt' onclick="printReceipt()" class="btn btn-primary btn-block" style="display: none;">GENERATE RECEIPT</button>
+        <iframe id='or' width="100%" height="350px;" style="display: none;">
+          
+        </iframe>
+
 		</div>
 
 	</div>

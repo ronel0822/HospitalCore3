@@ -13,7 +13,7 @@ if($count==1){
 		session_start();
         $_SESSION['username'] = $row['username']; 
         $_SESSION['logged'] = TRUE; 
-        header("Location: main.php"); // Modify to go to the page you would like 
+        header("Location: pharmacy-cashier.php"); // Modify to go to the page you would like 
         exit; 
 }
 else {
